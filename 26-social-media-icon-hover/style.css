@@ -1,0 +1,138 @@
+html,body
+{
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.social-btns
+{
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.social-btns .btn
+{
+    display: inline-block;
+    background: #fff;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+    opacity: 0.99;
+}
+
+.social-btns .btn:focus,
+.social-btns .btn:hover
+{
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.9);
+}
+
+.social-btns .btn::before
+{
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.social-btns .btn .fab
+{
+    font-size: 38px;
+    vertical-align: middle;
+}
+
+.social-btns .btn,
+.social-btns .btn::before,
+.social-btns .btn .fab
+{
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1,59);   
+}
+
+.social-btns .btn::before
+{
+    top: 90%;
+    left: -100%;
+}
+
+.social-btns .btn .fab
+{
+    transform: scale(0.8);
+}
+
+.social-btns .btn.facebook::before
+{
+    background: #3b5998;
+}
+.social-btns .btn.facebook .fab
+{
+    color: #3b5998;
+}
+
+.social-btns .btn.twitter::before
+{
+    background: #1da1f2;
+}
+.social-btns .btn.twitter .fab
+{
+    color: #1da1f2;
+}
+
+.social-btns .btn.instagram::before
+{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.social-btns .btn.instagram .fab
+{
+    color: #d6249f;
+}
+
+.social-btns .btn.linkedin::before
+{
+    background:#0e76a8;
+}
+.social-btns .btn.linkedin .fab
+{
+    color: #0e76a8;
+}
+
+.social-btns .btn.youtube::before
+{
+    background:#ff0000;
+}
+.social-btns .btn.youtube .fab
+{
+    color: #ff0000;
+}
+
+.social-btns .btn.skype::before
+{
+    background:#00aff0;
+}
+.social-btns .btn.skype .fab
+{
+    color: #00aff0;
+}
+
+.social-btns .btn:focus::before,
+.social-btns .btn:hover::before
+{
+    top: -10%;
+    left: -10%;
+}
+
+.social-btns .btn:focus .fab,
+.social-btns .btn:hover .fab
+{
+    color: #fff;
+    transform: scale(1);
+}
+
